@@ -1,0 +1,27 @@
+red_block_GUID = '36588e'
+blue_block_GUID = 'bed977'
+green_block_GUID = '24c6f5'
+
+button_parameters = {}
+button_parameters.click_function = 'buttonClicked'
+button_parameters.function_owner = nil
+button_parameters.label = 'Abra-me!'
+button_parameters.position = {0,0.8,0}
+button_parameters.rotation = {0,0,0}
+button_parameters.width = 500
+button_parameters.height = 500
+button_parameters.font_size = 100
+
+function onLoad()
+    red_block = getObjectFromGUID(red_block_GUID)
+    blue_block = getObjectFromGUID(blue_block_GUID)
+    green_block = getObjectFromGUID(green_block_GUID)
+
+    red_block.setName('Bloco Vermelho')
+    blue_block.setName('Bloco Azul')
+    green_block.setName('Bloco Verde')
+
+    red_block.createButton(button_parameters)
+
+    print('aeeeeeHOOOOOO!')
+end
